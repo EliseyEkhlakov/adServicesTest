@@ -20,7 +20,7 @@ class MyService : Service() {
         log("onStartCommand")
         coroutineScope.launch {
             for(i in 0 until 100){
-                delay(1000)
+                delay(2000)
                 log("Timer $i")
             }
         }
